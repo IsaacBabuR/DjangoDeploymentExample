@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% load custfilters %}
+
+	{% block body_block %}
+		<h1> This is my Index.html page!!!</h1>
+		<h2> An example of template inheritance! </h2>
+		<h2>{{ text|cutout:"hello" }}</h2> <!-- converting the text to upper case -->
+		<h2>{{ number|add:"50" }}</h2> <!-- adding 50 to the number -->
+
+	{% endblock %}
